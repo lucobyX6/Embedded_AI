@@ -2,7 +2,7 @@
   ******************************************************************************
   * @file    mnist.c
   * @author  AST Embedded Analytics Research Platform
-  * @date    2025-03-10T09:30:13+0100
+  * @date    2025-03-16T11:51:11+0100
   * @brief   AI Tool Automatic Code Generator for Embedded NN computing
   ******************************************************************************
   * @attention
@@ -42,7 +42,7 @@
 #endif
 
 #undef AI_TOOLS_DATE_TIME
-#define AI_TOOLS_DATE_TIME   "2025-03-10T09:30:13+0100"
+#define AI_TOOLS_DATE_TIME   "2025-03-16T11:51:11+0100"
 
 #undef AI_TOOLS_COMPILE_TIME
 #define AI_TOOLS_COMPILE_TIME    __DATE__ " " __TIME__
@@ -345,7 +345,7 @@ AI_NETWORK_OBJ_DECLARE(
     3868, NULL, NULL),
   AI_TENSOR_LIST_IO_OBJ_INIT(AI_FLAG_NONE, AI_MNIST_IN_NUM, &input_0_output),
   AI_TENSOR_LIST_IO_OBJ_INIT(AI_FLAG_NONE, AI_MNIST_OUT_NUM, &dense_1_output),
-  &conv2d_conv2d_layer, 0xfbcb477f, NULL)
+  &conv2d_conv2d_layer, 0xdd1b2f8e, NULL)
 
 #else
 
@@ -365,7 +365,7 @@ AI_NETWORK_OBJ_DECLARE(
   ),
   AI_TENSOR_LIST_IO_OBJ_INIT(AI_FLAG_NONE, AI_MNIST_IN_NUM, &input_0_output),
   AI_TENSOR_LIST_IO_OBJ_INIT(AI_FLAG_NONE, AI_MNIST_OUT_NUM, &dense_1_output),
-  &conv2d_conv2d_layer, 0xfbcb477f, NULL)
+  &conv2d_conv2d_layer, 0xdd1b2f8e, NULL)
 
 #endif	/*(AI_TOOLS_API_VERSION < AI_TOOLS_API_VERSION_1_5)*/
 
@@ -480,7 +480,7 @@ ai_bool ai_mnist_get_info(
       .params            = AI_STRUCT_INIT,
       .activations       = AI_STRUCT_INIT,
       .n_nodes           = 0,
-      .signature         = 0xfbcb477f,
+      .signature         = 0xdd1b2f8e,
     };
 
     if (!ai_platform_api_get_network_report(network, &r)) return false;
@@ -528,7 +528,7 @@ ai_bool ai_mnist_get_report(
       .map_weights       = AI_STRUCT_INIT,
       .map_activations   = AI_STRUCT_INIT,
       .n_nodes           = 0,
-      .signature         = 0xfbcb477f,
+      .signature         = 0xdd1b2f8e,
     };
 
     if (!ai_platform_api_get_network_report(network, &r)) return false;

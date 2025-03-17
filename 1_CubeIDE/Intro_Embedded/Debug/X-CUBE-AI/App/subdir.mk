@@ -6,18 +6,27 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
 ../X-CUBE-AI/App/app_x-cube-ai.c \
+../X-CUBE-AI/App/mlp_predict_failure.c \
+../X-CUBE-AI/App/mlp_predict_failure_data.c \
+../X-CUBE-AI/App/mlp_predict_failure_data_params.c \
 ../X-CUBE-AI/App/mnist.c \
 ../X-CUBE-AI/App/mnist_data.c \
 ../X-CUBE-AI/App/mnist_data_params.c 
 
 OBJS += \
 ./X-CUBE-AI/App/app_x-cube-ai.o \
+./X-CUBE-AI/App/mlp_predict_failure.o \
+./X-CUBE-AI/App/mlp_predict_failure_data.o \
+./X-CUBE-AI/App/mlp_predict_failure_data_params.o \
 ./X-CUBE-AI/App/mnist.o \
 ./X-CUBE-AI/App/mnist_data.o \
 ./X-CUBE-AI/App/mnist_data_params.o 
 
 C_DEPS += \
 ./X-CUBE-AI/App/app_x-cube-ai.d \
+./X-CUBE-AI/App/mlp_predict_failure.d \
+./X-CUBE-AI/App/mlp_predict_failure_data.d \
+./X-CUBE-AI/App/mlp_predict_failure_data_params.d \
 ./X-CUBE-AI/App/mnist.d \
 ./X-CUBE-AI/App/mnist_data.d \
 ./X-CUBE-AI/App/mnist_data_params.d 
@@ -30,7 +39,7 @@ X-CUBE-AI/App/%.o X-CUBE-AI/App/%.su X-CUBE-AI/App/%.cyclo: ../X-CUBE-AI/App/%.c
 clean: clean-X-2d-CUBE-2d-AI-2f-App
 
 clean-X-2d-CUBE-2d-AI-2f-App:
-	-$(RM) ./X-CUBE-AI/App/app_x-cube-ai.cyclo ./X-CUBE-AI/App/app_x-cube-ai.d ./X-CUBE-AI/App/app_x-cube-ai.o ./X-CUBE-AI/App/app_x-cube-ai.su ./X-CUBE-AI/App/mnist.cyclo ./X-CUBE-AI/App/mnist.d ./X-CUBE-AI/App/mnist.o ./X-CUBE-AI/App/mnist.su ./X-CUBE-AI/App/mnist_data.cyclo ./X-CUBE-AI/App/mnist_data.d ./X-CUBE-AI/App/mnist_data.o ./X-CUBE-AI/App/mnist_data.su ./X-CUBE-AI/App/mnist_data_params.cyclo ./X-CUBE-AI/App/mnist_data_params.d ./X-CUBE-AI/App/mnist_data_params.o ./X-CUBE-AI/App/mnist_data_params.su
+	-$(RM) ./X-CUBE-AI/App/app_x-cube-ai.cyclo ./X-CUBE-AI/App/app_x-cube-ai.d ./X-CUBE-AI/App/app_x-cube-ai.o ./X-CUBE-AI/App/app_x-cube-ai.su ./X-CUBE-AI/App/mlp_predict_failure.cyclo ./X-CUBE-AI/App/mlp_predict_failure.d ./X-CUBE-AI/App/mlp_predict_failure.o ./X-CUBE-AI/App/mlp_predict_failure.su ./X-CUBE-AI/App/mlp_predict_failure_data.cyclo ./X-CUBE-AI/App/mlp_predict_failure_data.d ./X-CUBE-AI/App/mlp_predict_failure_data.o ./X-CUBE-AI/App/mlp_predict_failure_data.su ./X-CUBE-AI/App/mlp_predict_failure_data_params.cyclo ./X-CUBE-AI/App/mlp_predict_failure_data_params.d ./X-CUBE-AI/App/mlp_predict_failure_data_params.o ./X-CUBE-AI/App/mlp_predict_failure_data_params.su ./X-CUBE-AI/App/mnist.cyclo ./X-CUBE-AI/App/mnist.d ./X-CUBE-AI/App/mnist.o ./X-CUBE-AI/App/mnist.su ./X-CUBE-AI/App/mnist_data.cyclo ./X-CUBE-AI/App/mnist_data.d ./X-CUBE-AI/App/mnist_data.o ./X-CUBE-AI/App/mnist_data.su ./X-CUBE-AI/App/mnist_data_params.cyclo ./X-CUBE-AI/App/mnist_data_params.d ./X-CUBE-AI/App/mnist_data_params.o ./X-CUBE-AI/App/mnist_data_params.su
 
 .PHONY: clean-X-2d-CUBE-2d-AI-2f-App
 

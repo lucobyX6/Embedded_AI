@@ -411,44 +411,44 @@
   ],
   "environment": {
     "generated_model": {
-      "generated_time": "2025-03-10T09:30:13+0100",
+      "generated_time": "2025-03-16T11:51:11+0100",
       "model_files": [
         {
           "name": "mnist_data_params.h",
-          "signature": "0xab412b3e74b5d323d5993b760a87189f"
+          "signature": "0x16fb98d012fd08cbbf6b624dee124733"
         },
         {
           "name": "mnist_data_params.c",
-          "signature": "0x065edbe15399d11193c598993492a798"
+          "signature": "0x10dbf7128876b026f0dae9422d4a651f"
         },
         {
           "name": "mnist_data.h",
-          "signature": "0x401389713ed07e3739a9dbb125f07171"
+          "signature": "0x9f50e1210f0a9be9b7bb7ffd9dd25fdd"
         },
         {
           "name": "mnist_data.c",
-          "signature": "0x610c5828acde3566dd3f402d8e25f979"
+          "signature": "0x54a8580b9e75b9d74ccf2e158c2acaf3"
         },
         {
           "name": "mnist_config.h",
-          "signature": "0x14af49803633c1bcad5cb2cd960d7b1d"
+          "signature": "0xed0a2de1d969120250030131c2493c12"
         },
         {
           "name": "mnist.h",
-          "signature": "0xd8cbe25f23a2ab5dce6493e116eb3f72"
+          "signature": "0x654cde77d367f07d622873dd0f825753"
         },
         {
           "name": "mnist.c",
-          "signature": "0xc3f46a533e70859e70f18b33c64950ec"
+          "signature": "0x23eeabc8a036574b1490483082a3ed76"
         }
       ],
       "name": "mnist"
     },
-    "network_signature": "0xfbcb477fd1522bc8",
+    "network_signature": "0xdd1b2f8e5526c12c",
     "test_name": "",
     "tools": [
       {
-        "arguments": "generate --target stm32l4 --name mnist -m C:/1_Travail/3_ISMIN/2A_ISMIN/1_Cours/ISMIN_S8/9_GP_Analytique_Industrie_Futur/1_UP_IA_Embarquee/1_Intro/MNIST_NN_C2_16_10.h5 --compression none --verbosity 1 --workspace C:/Users/luc4s/AppData/Local/Temp/mxAI_workspace287038185720013990297925939813517 --output C:/Users/luc4s/.stm32cubemx/mnist_output",
+        "arguments": "generate --target stm32l4 --name mnist -m C:/1_Travail/3_ISMIN/2A_ISMIN/1_Cours/ISMIN_S8/9_GP_Analytique_Industrie_Futur/1_UP_IA_Embarquee/1_Intro/MNIST_NN_C2_16_10.h5 --compression none --verbosity 1 --workspace C:/Users/luc4s/AppData/Local/Temp/mxAI_workspace512158637650015937864136187890808 --output C:/Users/luc4s/.stm32cubemx/mnist_output",
         "environment": [
           "STATS_TYPE=X-CUBE-AI"
         ],
