@@ -52,7 +52,7 @@
         }
     },
     "activations_alignment": 4,
-    "arguments": "generate --target stm32l4 --name mnist -m C:/1_Travail/3_ISMIN/2A_ISMIN/1_Cours/ISMIN_S8/9_GP_Analytique_Industrie_Futur/1_UP_IA_Embarquee/1_Intro/MNIST_NN_C2_16_10.h5 --compression none --verbosity 1 --workspace C:/Users/luc4s/AppData/Local/Temp/mxAI_workspace287038185720013990297925939813517 --output C:/Users/luc4s/.stm32cubemx/mnist_output",
+    "arguments": "generate --target stm32l4 --name mnist -m C:/1_Travail/3_ISMIN/2A_ISMIN/1_Cours/ISMIN_S8/9_GP_Analytique_Industrie_Futur/1_UP_IA_Embarquee/1_Intro/MNIST_NN_C2_16_10.h5 --compression none --verbosity 1 --workspace C:/Users/luc4s/AppData/Local/Temp/mxAI_workspace512158637650015937864136187890808 --output C:/Users/luc4s/.stm32cubemx/mnist_output",
     "c_activations_count": 1,
     "c_arrays": [
         {
@@ -593,7 +593,7 @@
         ]
     },
     "data_alignment": 4,
-    "date_time": "2025-03-10T09:30:13+0100",
+    "date_time": "2025-03-16T11:51:11+0100",
     "inputs": [
         "input_0_output"
     ],

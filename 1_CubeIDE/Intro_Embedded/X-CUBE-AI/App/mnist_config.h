@@ -3,7 +3,7 @@
   ******************************************************************************
   * @file    mnist_config.h
   * @author  AST Embedded Analytics Research Platform
-  * @date    2025-03-10T09:30:13+0100
+  * @date    2025-03-16T11:51:11+0100
   * @brief   AI Tool Automatic Code Generator for Custom Layers Implementation
   ******************************************************************************
   * @attention
