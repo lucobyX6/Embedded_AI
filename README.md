@@ -8,7 +8,7 @@ Introduction
 
 **Hardware :** Discovery kit with STM32L4R9AI MCU
 
-![32L4R9IDISCOVERY](https://www.st.com/bin/ecommerce/api/image.PF264782.en.feature-description-include-personalized-no-cpn-medium.jpg)
+![STM32L4R9IDISCOVERY](./pictures/STM32.jpg "STM32L4R9IDISCOVERY")
 
 **Tools :** 
 - Google Collab (https://colab.research.google.com/)
@@ -27,11 +27,29 @@ Project
 
 #### Artificial Intelligence training
 
-> Dataset view
-> Dataset not clean 
-> Overfitting and underfitting
-> Correction with SMOTE
-> Good results
+**Data :**\
+The dataset contains of 10,000 machines with failure or not. For each machine, there is the operating condition of a machine and labels. Labels are the machine failure indicator and the failure type : 
+
+*   **TWF**: Tool Wear Failure
+*   **HDF**: Heat Dissipation Failure
+*   **PWF**: Power Failure
+*   **OSF**: Overstrain Failure
+*   **RNF**: Random Failure
+
+With a plot of this dataset, we observe that the dataset is not clean correctly. For example, some machines without failure have a RNF failure (something impossible by definition) and machine with failure can have RNF failure or no specific failure. This failure types aren't predictible, so this will descrease model accurrancy.
+
+Moreover, our dataset has bias, because the ratio between machine_failure = 1 and machine_failure = 0 is very small 3.39%. This is bad for our model training and will creates overfitting.
+
+To correct this problem, we have use SMOTE. It creates new datas based on current minority data. With an extensive dataset and less bias our model accurancy will be better without overfitting.
+
+| Before SMOTE | After SMOTE |
+| ------------- | ------------- |
+|Shape X_train : (6981, 5) | Shape X_train : (33861, 5) |
+|Shape X_test : (2992, 5) | Shape X_test : (14512, 5) |
+|Shape Y_train : (6981, 5) | Shape Y_train : (33861, 5) |
+|Shape Y_test : (2992, 5) | Shape Y_test : (14512, 5) |
+
+After training and test, we get a good light model of 11,269 parameters, with an accurancy of 92%. We export the model to .h5 file, to implement on the board.
 
 #### Implementation with CubeAI
 
