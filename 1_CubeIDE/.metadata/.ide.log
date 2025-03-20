@@ -2044,3 +2044,5 @@
 2025-03-20 11:06:28,944 [INFO] AIModelDetailledView:930 - Selected model: Keras
 2025-03-20 11:06:29,047 [INFO] AIModelDetailledView:2372 - Analysis status: done
 2025-03-20 11:06:37,455 [INFO] AI:951 - getUI adding AI com.st.microxplorer.plugins.ip.ai.AI@b78c18d on STMicroelectronics.X-CUBE-AI.10.0.0
+2025-03-20 11:09:28,339 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 
+2025-03-20 11:09:28,340 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 
