@@ -6,7 +6,7 @@ import numpy as np
 # Class for UART communication with STM32 Cube AI
 class UART_AI:
     def __init__(self, port, baud_rate):
-            self.serial_port = port
+            self.port = port
             self.baud_rate = baud_rate
 
 
@@ -57,13 +57,13 @@ class UART_AI:
         Returns:
         A list of float values obtained by dividing each byte by 255.
         """
-        output = serial_port.read(10)
+        output = self.serial_port.read(10)
 
         float_values = [int(out)/255 for out in output]
         return float_values
 
 
-    def evaluate_model_on_STM32(self, iterations):
+    def evaluate_model_on_STM32(self, iterations, X_test, Y_test):
         """
         Evaluates the accuracy of a machine learning model on an STM32 device.
 
@@ -77,8 +77,8 @@ class UART_AI:
         accuracy = 0
         for i in range(iterations):
             print(f"----- Iteration {i+1} -----")
-            send_inputs_to_STM32(X_test[i])
-            output = read_output_from_STM32()
+            self.send_inputs_to_STM32(X_test[i])
+            output = self.read_output_from_STM32()
             print(output)
             if (np.argmax(output) == np.argmax(Y_test[i])):
                 accuracy += 1 / iterations

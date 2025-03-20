@@ -1,11 +1,32 @@
-12:04:04 **** Incremental Build of configuration Debug for project Intro_Embedded ****
+10:24:30 **** Incremental Build of configuration Debug for project Intro_Embedded ****
 make -j16 all 
 arm-none-eabi-size  Intro_Embedded.elf 
    text	   data	    bss	    dec	    hex	filename
   94656	   2432	   7512	 104600	  19898	Intro_Embedded.elf
 Finished building: default.size.stdout
  
-12:04:08 **** Incremental Build of configuration Debug for project Intro_Embedded ****
+10:24:33 **** Incremental Build of configuration Debug for project Intro_Embedded ****
+make -j16 all 
+arm-none-eabi-size  Intro_Embedded.elf 
+   text	   data	    bss	    dec	    hex	filename
+  94656	   2432	   7512	 104600	  19898	Intro_Embedded.elf
+Finished building: default.size.stdout
+ 
+10:25:40 **** Incremental Build of configuration Debug for project Intro_Embedded ****
+make -j16 all 
+arm-none-eabi-size  Intro_Embedded.elf 
+   text	   data	    bss	    dec	    hex	filename
+  94656	   2432	   7512	 104600	  19898	Intro_Embedded.elf
+Finished building: default.size.stdout
+ 
+10:26:38 **** Incremental Build of configuration Debug for project Intro_Embedded ****
+make -j16 all 
+arm-none-eabi-size  Intro_Embedded.elf 
+   text	   data	    bss	    dec	    hex	filename
+  94656	   2432	   7512	 104600	  19898	Intro_Embedded.elf
+Finished building: default.size.stdout
+ 
+10:29:52 **** Incremental Build of configuration Debug for project Intro_Embedded ****
 make -j16 all 
 arm-none-eabi-size  Intro_Embedded.elf 
    text	   data	    bss	    dec	    hex	filename

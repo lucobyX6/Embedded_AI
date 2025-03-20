@@ -19,7 +19,7 @@ else:
 
 # Main
 if __name__ == '__main__' and ports:
-    uart_ai = UART_AI(serial_port = PORT, baud_rate = 115200)
+    uart_ai = UART_AI.UART_AI(port = PORT, baud_rate = 115200)
 
     X_test = np.load("../0_Data/Predict_machine_X.npy")
     Y_test = np.load("../0_Data/Predict_machine_Y.npy")
@@ -29,4 +29,4 @@ if __name__ == '__main__' and ports:
     print("Synchronised")
 
     print("Evaluating model on STM32...")
-    error = uart_ai.evaluate_model_on_STM32(100)
+    error = uart_ai.evaluate_model_on_STM32(100, X_test, Y_test)
