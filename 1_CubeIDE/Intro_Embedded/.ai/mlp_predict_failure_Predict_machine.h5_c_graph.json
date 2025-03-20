@@ -5,47 +5,47 @@
             "buffer_data_size": 0,
             "buffer_offsets": [
                 {
-                    "buffer_name": "input_4_output_array",
+                    "buffer_name": "input_7_output_array",
                     "offset": 236,
                     "size": 20
                 },
                 {
-                    "buffer_name": "dense_11_dense_output_array",
+                    "buffer_name": "dense_22_dense_output_array",
                     "offset": 256,
                     "size": 128
                 },
                 {
-                    "buffer_name": "dense_11_output_array",
+                    "buffer_name": "dense_22_output_array",
                     "offset": 256,
                     "size": 128
                 },
                 {
-                    "buffer_name": "dense_12_dense_output_array",
+                    "buffer_name": "dense_23_dense_output_array",
                     "offset": 0,
                     "size": 256
                 },
                 {
-                    "buffer_name": "dense_12_output_array",
+                    "buffer_name": "dense_23_output_array",
                     "offset": 0,
                     "size": 256
                 },
                 {
-                    "buffer_name": "dense_13_dense_output_array",
+                    "buffer_name": "dense_24_dense_output_array",
                     "offset": 256,
                     "size": 512
                 },
                 {
-                    "buffer_name": "dense_13_output_array",
+                    "buffer_name": "dense_24_output_array",
                     "offset": 256,
                     "size": 512
                 },
                 {
-                    "buffer_name": "dense_14_dense_output_array",
+                    "buffer_name": "dense_25_dense_output_array",
                     "offset": 0,
                     "size": 20
                 },
                 {
-                    "buffer_name": "dense_14_output_array",
+                    "buffer_name": "dense_25_output_array",
                     "offset": 20,
                     "size": 20
                 }
@@ -57,7 +57,7 @@
         }
     },
     "activations_alignment": 4,
-    "arguments": "generate --target stm32l4 --name mlp_predict_failure -m C:/1_Travail/3_ISMIN/2A_ISMIN/1_Cours/ISMIN_S8/9_GP_Analytique_Industrie_Futur/1_UP_IA_Embarquee/2_Rendu/Embedded_AI/0_Data/Predict_machine.h5 --compression none --verbosity 1 --workspace C:/Users/luc4s/AppData/Local/Temp/mxAI_workspace569866740990017880943116010931304 --output C:/Users/luc4s/.stm32cubemx/mlp_predict_failure_output",
+    "arguments": "analyze --target stm32l4 --name mlp_predict_failure -m C:/1_Travail/3_ISMIN/2A_ISMIN/1_Cours/ISMIN_S8/9_GP_Analytique_Industrie_Futur/1_UP_IA_Embarquee/2_Rendu/Embedded_AI/0_Data/Predict_machine.h5 --compression none --verbosity 1 --workspace C:/Users/luc4s/AppData/Local/Temp/mxAI_workspace51075762874003645816799743849632 --output C:/Users/luc4s/.stm32cubemx/mlp_predict_failure_output",
     "c_activations_count": 1,
     "c_arrays": [
         {
@@ -70,13 +70,13 @@
             "is_const": true,
             "mem_pool": "weights",
             "n_items": 32,
-            "name": "dense_11_dense_bias_array",
+            "name": "dense_22_dense_bias_array",
             "offset": 640,
             "scale": [],
             "size": 32,
             "tensors": [
                 {
-                    "name": "dense_11_dense_bias",
+                    "name": "dense_22_dense_bias",
                     "shape": [
                         32
                     ]
@@ -95,13 +95,13 @@
             "is_const": false,
             "mem_pool": "activations",
             "n_items": 32,
-            "name": "dense_11_dense_output_array",
+            "name": "dense_22_dense_output_array",
             "offset": 256,
             "scale": [],
             "size": 32,
             "tensors": [
                 {
-                    "name": "dense_11_dense_output",
+                    "name": "dense_22_dense_output",
                     "shape": [
                         32
                     ]
@@ -119,13 +119,13 @@
             "is_const": true,
             "mem_pool": "weights",
             "n_items": 160,
-            "name": "dense_11_dense_weights_array",
+            "name": "dense_22_dense_weights_array",
             "offset": 0,
             "scale": [],
             "size": 160,
             "tensors": [
                 {
-                    "name": "dense_11_dense_weights",
+                    "name": "dense_22_dense_weights",
                     "shape": [
                         32,
                         5
@@ -145,13 +145,13 @@
             "is_const": false,
             "mem_pool": "activations",
             "n_items": 32,
-            "name": "dense_11_output_array",
+            "name": "dense_22_output_array",
             "offset": 256,
             "scale": [],
             "size": 32,
             "tensors": [
                 {
-                    "name": "dense_11_output",
+                    "name": "dense_22_output",
                     "shape": [
                         32
                     ]
@@ -169,13 +169,13 @@
             "is_const": true,
             "mem_pool": "weights",
             "n_items": 64,
-            "name": "dense_12_dense_bias_array",
+            "name": "dense_23_dense_bias_array",
             "offset": 8960,
             "scale": [],
             "size": 64,
             "tensors": [
                 {
-                    "name": "dense_12_dense_bias",
+                    "name": "dense_23_dense_bias",
                     "shape": [
                         64
                     ]
@@ -194,13 +194,13 @@
             "is_const": false,
             "mem_pool": "activations",
             "n_items": 64,
-            "name": "dense_12_dense_output_array",
+            "name": "dense_23_dense_output_array",
             "offset": 0,
             "scale": [],
             "size": 64,
             "tensors": [
                 {
-                    "name": "dense_12_dense_output",
+                    "name": "dense_23_dense_output",
                     "shape": [
                         64
                     ]
@@ -218,13 +218,13 @@
             "is_const": true,
             "mem_pool": "weights",
             "n_items": 2048,
-            "name": "dense_12_dense_weights_array",
+            "name": "dense_23_dense_weights_array",
             "offset": 768,
             "scale": [],
             "size": 2048,
             "tensors": [
                 {
-                    "name": "dense_12_dense_weights",
+                    "name": "dense_23_dense_weights",
                     "shape": [
                         64,
                         32
@@ -244,13 +244,13 @@
             "is_const": false,
             "mem_pool": "activations",
             "n_items": 64,
-            "name": "dense_12_output_array",
+            "name": "dense_23_output_array",
             "offset": 0,
             "scale": [],
             "size": 64,
             "tensors": [
                 {
-                    "name": "dense_12_output",
+                    "name": "dense_23_output",
                     "shape": [
                         64
                     ]
@@ -268,13 +268,13 @@
             "is_const": true,
             "mem_pool": "weights",
             "n_items": 128,
-            "name": "dense_13_dense_bias_array",
+            "name": "dense_24_dense_bias_array",
             "offset": 41984,
             "scale": [],
             "size": 128,
             "tensors": [
                 {
-                    "name": "dense_13_dense_bias",
+                    "name": "dense_24_dense_bias",
                     "shape": [
                         128
                     ]
@@ -293,13 +293,13 @@
             "is_const": false,
             "mem_pool": "activations",
             "n_items": 128,
-            "name": "dense_13_dense_output_array",
+            "name": "dense_24_dense_output_array",
             "offset": 256,
             "scale": [],
             "size": 128,
             "tensors": [
                 {
-                    "name": "dense_13_dense_output",
+                    "name": "dense_24_dense_output",
                     "shape": [
                         128
                     ]
@@ -317,13 +317,13 @@
             "is_const": true,
             "mem_pool": "weights",
             "n_items": 8192,
-            "name": "dense_13_dense_weights_array",
+            "name": "dense_24_dense_weights_array",
             "offset": 9216,
             "scale": [],
             "size": 8192,
             "tensors": [
                 {
-                    "name": "dense_13_dense_weights",
+                    "name": "dense_24_dense_weights",
                     "shape": [
                         128,
                         64
@@ -343,13 +343,13 @@
             "is_const": false,
             "mem_pool": "activations",
             "n_items": 128,
-            "name": "dense_13_output_array",
+            "name": "dense_24_output_array",
             "offset": 256,
             "scale": [],
             "size": 128,
             "tensors": [
                 {
-                    "name": "dense_13_output",
+                    "name": "dense_24_output",
                     "shape": [
                         128
                     ]
@@ -367,13 +367,13 @@
             "is_const": true,
             "mem_pool": "weights",
             "n_items": 5,
-            "name": "dense_14_dense_bias_array",
+            "name": "dense_25_dense_bias_array",
             "offset": 45056,
             "scale": [],
             "size": 5,
             "tensors": [
                 {
-                    "name": "dense_14_dense_bias",
+                    "name": "dense_25_dense_bias",
                     "shape": [
                         5
                     ]
@@ -392,13 +392,13 @@
             "is_const": false,
             "mem_pool": "activations",
             "n_items": 5,
-            "name": "dense_14_dense_output_array",
+            "name": "dense_25_dense_output_array",
             "offset": 0,
             "scale": [],
             "size": 5,
             "tensors": [
                 {
-                    "name": "dense_14_dense_output",
+                    "name": "dense_25_dense_output",
                     "shape": [
                         5
                     ]
@@ -416,13 +416,13 @@
             "is_const": true,
             "mem_pool": "weights",
             "n_items": 640,
-            "name": "dense_14_dense_weights_array",
+            "name": "dense_25_dense_weights_array",
             "offset": 42496,
             "scale": [],
             "size": 640,
             "tensors": [
                 {
-                    "name": "dense_14_dense_weights",
+                    "name": "dense_25_dense_weights",
                     "shape": [
                         5,
                         128
@@ -443,13 +443,13 @@
             "is_const": false,
             "mem_pool": "activations",
             "n_items": 5,
-            "name": "dense_14_output_array",
+            "name": "dense_25_output_array",
             "offset": 20,
             "scale": [],
             "size": 5,
             "tensors": [
                 {
-                    "name": "dense_14_output",
+                    "name": "dense_25_output",
                     "shape": [
                         5
                     ]
@@ -468,13 +468,13 @@
             "is_const": false,
             "mem_pool": "activations",
             "n_items": 5,
-            "name": "input_4_output_array",
+            "name": "input_7_output_array",
             "offset": 236,
             "scale": [],
             "size": 5,
             "tensors": [
                 {
-                    "name": "input_4_output",
+                    "name": "input_7_output",
                     "shape": [
                         5
                     ]
@@ -494,22 +494,22 @@
             "layer_type": "Dense",
             "m_id": 2,
             "macc": 192,
-            "name": "dense_11_dense",
+            "name": "dense_22_dense",
             "op_by_type": {
                 "smul_f32_f32": 192
             },
             "rom": 768,
             "tensors": {
                 "inputs": [
-                    "input_4_output"
+                    "input_7_output"
                 ],
                 "outputs": [
-                    "dense_11_dense_output"
+                    "dense_22_dense_output"
                 ],
                 "scratchs": [],
                 "weights": [
-                    "dense_11_dense_weights",
-                    "dense_11_dense_bias"
+                    "dense_22_dense_weights",
+                    "dense_22_dense_bias"
                 ]
             },
             "weight_sparsity": [
@@ -527,17 +527,17 @@
             "layer_type": "Nonlinearity",
             "m_id": 2,
             "macc": 32,
-            "name": "dense_11",
+            "name": "dense_22",
             "op_by_type": {
                 "op_f32_f32": 32
             },
             "rom": 0,
             "tensors": {
                 "inputs": [
-                    "dense_11_dense_output"
+                    "dense_22_dense_output"
                 ],
                 "outputs": [
-                    "dense_11_output"
+                    "dense_22_output"
                 ],
                 "scratchs": [],
                 "weights": []
@@ -557,22 +557,22 @@
             "layer_type": "Dense",
             "m_id": 3,
             "macc": 2112,
-            "name": "dense_12_dense",
+            "name": "dense_23_dense",
             "op_by_type": {
                 "smul_f32_f32": 2112
             },
             "rom": 8448,
             "tensors": {
                 "inputs": [
-                    "dense_11_output"
+                    "dense_22_output"
                 ],
                 "outputs": [
-                    "dense_12_dense_output"
+                    "dense_23_dense_output"
                 ],
                 "scratchs": [],
                 "weights": [
-                    "dense_12_dense_weights",
-                    "dense_12_dense_bias"
+                    "dense_23_dense_weights",
+                    "dense_23_dense_bias"
                 ]
             },
             "weight_sparsity": [
@@ -590,17 +590,17 @@
             "layer_type": "Nonlinearity",
             "m_id": 3,
             "macc": 64,
-            "name": "dense_12",
+            "name": "dense_23",
             "op_by_type": {
                 "op_f32_f32": 64
             },
             "rom": 0,
             "tensors": {
                 "inputs": [
-                    "dense_12_dense_output"
+                    "dense_23_dense_output"
                 ],
                 "outputs": [
-                    "dense_12_output"
+                    "dense_23_output"
                 ],
                 "scratchs": [],
                 "weights": []
@@ -620,22 +620,22 @@
             "layer_type": "Dense",
             "m_id": 4,
             "macc": 8320,
-            "name": "dense_13_dense",
+            "name": "dense_24_dense",
             "op_by_type": {
                 "smul_f32_f32": 8320
             },
             "rom": 33280,
             "tensors": {
                 "inputs": [
-                    "dense_12_output"
+                    "dense_23_output"
                 ],
                 "outputs": [
-                    "dense_13_dense_output"
+                    "dense_24_dense_output"
                 ],
                 "scratchs": [],
                 "weights": [
-                    "dense_13_dense_weights",
-                    "dense_13_dense_bias"
+                    "dense_24_dense_weights",
+                    "dense_24_dense_bias"
                 ]
             },
             "weight_sparsity": [
@@ -653,17 +653,17 @@
             "layer_type": "Nonlinearity",
             "m_id": 4,
             "macc": 128,
-            "name": "dense_13",
+            "name": "dense_24",
             "op_by_type": {
                 "op_f32_f32": 128
             },
             "rom": 0,
             "tensors": {
                 "inputs": [
-                    "dense_13_dense_output"
+                    "dense_24_dense_output"
                 ],
                 "outputs": [
-                    "dense_13_output"
+                    "dense_24_output"
                 ],
                 "scratchs": [],
                 "weights": []
@@ -683,22 +683,22 @@
             "layer_type": "Dense",
             "m_id": 6,
             "macc": 645,
-            "name": "dense_14_dense",
+            "name": "dense_25_dense",
             "op_by_type": {
                 "smul_f32_f32": 645
             },
             "rom": 2580,
             "tensors": {
                 "inputs": [
-                    "dense_13_output"
+                    "dense_24_output"
                 ],
                 "outputs": [
-                    "dense_14_dense_output"
+                    "dense_25_dense_output"
                 ],
                 "scratchs": [],
                 "weights": [
-                    "dense_14_dense_weights",
-                    "dense_14_dense_bias"
+                    "dense_25_dense_weights",
+                    "dense_25_dense_bias"
                 ]
             },
             "weight_sparsity": [
@@ -716,17 +716,17 @@
             "layer_type": "Nonlinearity",
             "m_id": 6,
             "macc": 75,
-            "name": "dense_14",
+            "name": "dense_25",
             "op_by_type": {
                 "op_f32_f32": 75
             },
             "rom": 0,
             "tensors": {
                 "inputs": [
-                    "dense_14_dense_output"
+                    "dense_25_dense_output"
                 ],
                 "outputs": [
-                    "dense_14_output"
+                    "dense_25_output"
                 ],
                 "scratchs": [],
                 "weights": []
@@ -751,9 +751,9 @@
         ]
     },
     "data_alignment": 4,
-    "date_time": "2025-03-16T12:00:54+0100",
+    "date_time": "2025-03-20T10:20:31+0100",
     "inputs": [
-        "input_4_output"
+        "input_7_output"
     ],
     "macc": 11568,
     "memory_footprint": {
@@ -774,9 +774,9 @@
     "memory_pools": [],
     "model_fmt": "float",
     "model_name": "Predict_machine",
-    "model_signature": "0xd2061c6a80a34814029135c7afd30ba5",
+    "model_signature": "0x741cba476315da776fc9d84bae9917ae",
     "outputs": [
-        "dense_14_output"
+        "dense_25_output"
     ],
     "st_ai_version": "2.0.0-20049",
     "tool_version": "2.0.0-20049",
@@ -787,42 +787,42 @@
             "buffer_data_size": 45076,
             "buffer_offsets": [
                 {
-                    "buffer_name": "dense_11_dense_weights_array",
+                    "buffer_name": "dense_22_dense_weights_array",
                     "offset": 0,
                     "size": 640
                 },
                 {
-                    "buffer_name": "dense_11_dense_bias_array",
+                    "buffer_name": "dense_22_dense_bias_array",
                     "offset": 640,
                     "size": 128
                 },
                 {
-                    "buffer_name": "dense_12_dense_weights_array",
+                    "buffer_name": "dense_23_dense_weights_array",
                     "offset": 768,
                     "size": 8192
                 },
                 {
-                    "buffer_name": "dense_12_dense_bias_array",
+                    "buffer_name": "dense_23_dense_bias_array",
                     "offset": 8960,
                     "size": 256
                 },
                 {
-                    "buffer_name": "dense_13_dense_weights_array",
+                    "buffer_name": "dense_24_dense_weights_array",
                     "offset": 9216,
                     "size": 32768
                 },
                 {
-                    "buffer_name": "dense_13_dense_bias_array",
+                    "buffer_name": "dense_24_dense_bias_array",
                     "offset": 41984,
                     "size": 512
                 },
                 {
-                    "buffer_name": "dense_14_dense_weights_array",
+                    "buffer_name": "dense_25_dense_weights_array",
                     "offset": 42496,
                     "size": 2560
                 },
                 {
-                    "buffer_name": "dense_14_dense_bias_array",
+                    "buffer_name": "dense_25_dense_bias_array",
                     "offset": 45056,
                     "size": 20
                 }

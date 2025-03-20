@@ -15,7 +15,7 @@
       "intq": {},
       "is_param": true,
       "mpool_id": 1,
-      "name": "dense_11_dense_bias_array",
+      "name": "dense_22_dense_bias_array",
       "nbits": 32,
       "offset_start": 640,
       "qmn": {},
@@ -42,7 +42,7 @@
       "intq": {},
       "is_param": false,
       "mpool_id": 0,
-      "name": "dense_11_dense_output_array",
+      "name": "dense_22_dense_output_array",
       "nbits": 32,
       "offset_start": 256,
       "qmn": {},
@@ -69,7 +69,7 @@
       "intq": {},
       "is_param": true,
       "mpool_id": 1,
-      "name": "dense_11_dense_weights_array",
+      "name": "dense_22_dense_weights_array",
       "nbits": 32,
       "offset_start": 0,
       "qmn": {},
@@ -98,7 +98,7 @@
       "intq": {},
       "is_param": false,
       "mpool_id": 0,
-      "name": "dense_11_output_array",
+      "name": "dense_22_output_array",
       "nbits": 32,
       "offset_start": 256,
       "qmn": {},
@@ -125,7 +125,7 @@
       "intq": {},
       "is_param": true,
       "mpool_id": 1,
-      "name": "dense_12_dense_bias_array",
+      "name": "dense_23_dense_bias_array",
       "nbits": 32,
       "offset_start": 8960,
       "qmn": {},
@@ -152,7 +152,7 @@
       "intq": {},
       "is_param": false,
       "mpool_id": 0,
-      "name": "dense_12_dense_output_array",
+      "name": "dense_23_dense_output_array",
       "nbits": 32,
       "offset_start": 0,
       "qmn": {},
@@ -179,7 +179,7 @@
       "intq": {},
       "is_param": true,
       "mpool_id": 1,
-      "name": "dense_12_dense_weights_array",
+      "name": "dense_23_dense_weights_array",
       "nbits": 32,
       "offset_start": 768,
       "qmn": {},
@@ -208,7 +208,7 @@
       "intq": {},
       "is_param": false,
       "mpool_id": 0,
-      "name": "dense_12_output_array",
+      "name": "dense_23_output_array",
       "nbits": 32,
       "offset_start": 0,
       "qmn": {},
@@ -235,7 +235,7 @@
       "intq": {},
       "is_param": true,
       "mpool_id": 1,
-      "name": "dense_13_dense_bias_array",
+      "name": "dense_24_dense_bias_array",
       "nbits": 32,
       "offset_start": 41984,
       "qmn": {},
@@ -262,7 +262,7 @@
       "intq": {},
       "is_param": false,
       "mpool_id": 0,
-      "name": "dense_13_dense_output_array",
+      "name": "dense_24_dense_output_array",
       "nbits": 32,
       "offset_start": 256,
       "qmn": {},
@@ -289,7 +289,7 @@
       "intq": {},
       "is_param": true,
       "mpool_id": 1,
-      "name": "dense_13_dense_weights_array",
+      "name": "dense_24_dense_weights_array",
       "nbits": 32,
       "offset_start": 9216,
       "qmn": {},
@@ -318,7 +318,7 @@
       "intq": {},
       "is_param": false,
       "mpool_id": 0,
-      "name": "dense_13_output_array",
+      "name": "dense_24_output_array",
       "nbits": 32,
       "offset_start": 256,
       "qmn": {},
@@ -345,7 +345,7 @@
       "intq": {},
       "is_param": true,
       "mpool_id": 1,
-      "name": "dense_14_dense_bias_array",
+      "name": "dense_25_dense_bias_array",
       "nbits": 32,
       "offset_start": 45056,
       "qmn": {},
@@ -372,7 +372,7 @@
       "intq": {},
       "is_param": false,
       "mpool_id": 0,
-      "name": "dense_14_dense_output_array",
+      "name": "dense_25_dense_output_array",
       "nbits": 32,
       "offset_start": 0,
       "qmn": {},
@@ -399,7 +399,7 @@
       "intq": {},
       "is_param": true,
       "mpool_id": 1,
-      "name": "dense_14_dense_weights_array",
+      "name": "dense_25_dense_weights_array",
       "nbits": 32,
       "offset_start": 42496,
       "qmn": {},
@@ -428,7 +428,7 @@
       "intq": {},
       "is_param": false,
       "mpool_id": 0,
-      "name": "dense_14_output_array",
+      "name": "dense_25_output_array",
       "nbits": 32,
       "offset_start": 20,
       "qmn": {},
@@ -455,7 +455,7 @@
       "intq": {},
       "is_param": false,
       "mpool_id": 0,
-      "name": "input_4_output_array",
+      "name": "input_7_output_array",
       "nbits": 32,
       "offset_start": 236,
       "qmn": {},
@@ -470,44 +470,44 @@
   ],
   "environment": {
     "generated_model": {
-      "generated_time": "2025-03-16T12:00:54+0100",
+      "generated_time": "2025-03-20T10:20:31+0100",
       "model_files": [
         {
           "name": "mlp_predict_failure_data_params.h",
-          "signature": "0xb7fcbbb580a181daa0231062321e283e"
+          "signature": "0xb7c70783005ae2cd1da07d8074846165"
         },
         {
           "name": "mlp_predict_failure_data_params.c",
-          "signature": "0x778af7279452ecf3c052fb1ded93ff94"
+          "signature": "0x0469ee83d513bef54018299943598cda"
         },
         {
           "name": "mlp_predict_failure_data.h",
-          "signature": "0xcf7b530e5c5a2e3c5cafd110a349d427"
+          "signature": "0x38b0ebe463112cb7b2c8615c6cfe4574"
         },
         {
           "name": "mlp_predict_failure_data.c",
-          "signature": "0xe690c0b323d68d5d70e836f6c33c3901"
+          "signature": "0xb9be0a0ac7ec397a19d65408dc5591a6"
         },
         {
           "name": "mlp_predict_failure_config.h",
-          "signature": "0xb5dcc50b821a33ddb34db002a1ccb67b"
+          "signature": "0x14e770a0e30d8a0200df220f7ce5fa17"
         },
         {
           "name": "mlp_predict_failure.h",
-          "signature": "0xbf6dc11264fa3a779e42f0bb2793fdd4"
+          "signature": "0xa7f7cc48cde6817512db4b98200c44a2"
         },
         {
           "name": "mlp_predict_failure.c",
-          "signature": "0x3202aab45f7db7cccd80230c450b376e"
+          "signature": "0xbb8838a4ac2a1788f4620a9528812564"
         }
       ],
       "name": "mlp_predict_failure"
     },
-    "network_signature": "0x8bf88126a2f078b7",
+    "network_signature": "0xeb85473beb12f6eb",
     "test_name": "",
     "tools": [
       {
-        "arguments": "generate --target stm32l4 --name mlp_predict_failure -m C:/1_Travail/3_ISMIN/2A_ISMIN/1_Cours/ISMIN_S8/9_GP_Analytique_Industrie_Futur/1_UP_IA_Embarquee/2_Rendu/Embedded_AI/0_Data/Predict_machine.h5 --compression none --verbosity 1 --workspace C:/Users/luc4s/AppData/Local/Temp/mxAI_workspace569866740990017880943116010931304 --output C:/Users/luc4s/.stm32cubemx/mlp_predict_failure_output",
+        "arguments": "analyze --target stm32l4 --name mlp_predict_failure -m C:/1_Travail/3_ISMIN/2A_ISMIN/1_Cours/ISMIN_S8/9_GP_Analytique_Industrie_Futur/1_UP_IA_Embarquee/2_Rendu/Embedded_AI/0_Data/Predict_machine.h5 --compression none --verbosity 1 --workspace C:/Users/luc4s/AppData/Local/Temp/mxAI_workspace51075762874003645816799743849632 --output C:/Users/luc4s/.stm32cubemx/mlp_predict_failure_output",
         "environment": [
           "STATS_TYPE=X-CUBE-AI"
         ],
@@ -515,7 +515,7 @@
           "model_files": [
             {
               "name": "Predict_machine.h5",
-              "signature": "0xd2061c6a80a34814029135c7afd30ba5"
+              "signature": "0x741cba476315da776fc9d84bae9917ae"
             }
           ],
           "n_params": 11269,
@@ -650,7 +650,7 @@
           ],
           "macc": 192,
           "mapping": "NODE_SW",
-          "name": "dense_11_dense",
+          "name": "dense_22_dense",
           "original_nodes": [
             "2"
           ],
@@ -674,7 +674,7 @@
           ],
           "macc": 32,
           "mapping": "NODE_SW",
-          "name": "dense_11",
+          "name": "dense_22",
           "original_nodes": [
             "2"
           ],
@@ -701,7 +701,7 @@
           ],
           "macc": 2112,
           "mapping": "NODE_SW",
-          "name": "dense_12_dense",
+          "name": "dense_23_dense",
           "original_nodes": [
             "3"
           ],
@@ -725,7 +725,7 @@
           ],
           "macc": 64,
           "mapping": "NODE_SW",
-          "name": "dense_12",
+          "name": "dense_23",
           "original_nodes": [
             "3"
           ],
@@ -752,7 +752,7 @@
           ],
           "macc": 8320,
           "mapping": "NODE_SW",
-          "name": "dense_13_dense",
+          "name": "dense_24_dense",
           "original_nodes": [
             "4"
           ],
@@ -776,7 +776,7 @@
           ],
           "macc": 128,
           "mapping": "NODE_SW",
-          "name": "dense_13",
+          "name": "dense_24",
           "original_nodes": [
             "4"
           ],
@@ -803,7 +803,7 @@
           ],
           "macc": 645,
           "mapping": "NODE_SW",
-          "name": "dense_14_dense",
+          "name": "dense_25_dense",
           "original_nodes": [
             "6"
           ],
@@ -829,7 +829,7 @@
           ],
           "macc": 75,
           "mapping": "NODE_SW",
-          "name": "dense_14",
+          "name": "dense_25",
           "original_nodes": [
             "6"
           ],
@@ -845,7 +845,7 @@
       ],
       "original_inputs": [
         {
-          "input_4": {
+          "input_7": {
             "data_type": "float32",
             "shape": "(BATCH: None, CH: 5)"
           }
@@ -853,7 +853,7 @@
       ],
       "original_outputs": [
         {
-          "dense_14": {
+          "dense_25": {
             "data_type": "float32",
             "shape": "(BATCH: None, CH: 5)"
           }

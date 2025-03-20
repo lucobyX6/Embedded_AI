@@ -1,7 +1,7 @@
 {
     "_allocate_inputs": 4,
     "_allocate_outputs": 4,
-    "cli_parameters": "generate --target stm32l4 --name mlp_predict_failure -m C:/1_Travail/3_ISMIN/2A_ISMIN/1_Cours/ISMIN_S8/9_GP_Analytique_Industrie_Futur/1_UP_IA_Embarquee/2_Rendu/Embedded_AI/0_Data/Predict_machine.h5 --compression none --verbosity 1 --workspace C:/Users/luc4s/AppData/Local/Temp/mxAI_workspace569866740990017880943116010931304 --output C:/Users/luc4s/.stm32cubemx/mlp_predict_failure_output",
+    "cli_parameters": "analyze --target stm32l4 --name mlp_predict_failure -m C:/1_Travail/3_ISMIN/2A_ISMIN/1_Cours/ISMIN_S8/9_GP_Analytique_Industrie_Futur/1_UP_IA_Embarquee/2_Rendu/Embedded_AI/0_Data/Predict_machine.h5 --compression none --verbosity 1 --workspace C:/Users/luc4s/AppData/Local/Temp/mxAI_workspace51075762874003645816799743849632 --output C:/Users/luc4s/.stm32cubemx/mlp_predict_failure_output",
     "cli_version": {
         "extra": "20049",
         "major": 2,
@@ -11,14 +11,14 @@
     "cli_version_str": "2.0.0-20049",
     "code_size": 0,
     "compression": [],
-    "date_time": "2025-03-16T12:00:54+0100",
+    "date_time": "2025-03-20T10:20:31+0100",
     "error": 0,
     "error_str": [],
-    "exec_cmd": "generate",
+    "exec_cmd": "analyze",
     "exec_duration": 0.0,
-    "hash": "0xd2061c6a80a34814029135c7afd30ba5",
+    "hash": "0x741cba476315da776fc9d84bae9917ae",
     "inputs": [
-        "input_4"
+        "input_7"
     ],
     "layers": [
         {
@@ -40,7 +40,7 @@
             },
             "id": 0,
             "inputs": [],
-            "name": "input_4",
+            "name": "input_7",
             "original": "InputLayer",
             "type": "Input"
         },
@@ -54,9 +54,9 @@
             },
             "id": 1,
             "inputs": [
-                "input_4"
+                "input_7"
             ],
-            "name": "flatten_3",
+            "name": "flatten_6",
             "original": "Flatten",
             "type": "Reshape"
         },
@@ -82,9 +82,9 @@
             },
             "id": 2,
             "inputs": [
-                "flatten_3"
+                "flatten_6"
             ],
-            "name": "dense_11_dense",
+            "name": "dense_22_dense",
             "original": "Dense",
             "type": "Dense"
         },
@@ -107,9 +107,9 @@
             },
             "id": 2,
             "inputs": [
-                "dense_11_dense"
+                "dense_22_dense"
             ],
-            "name": "dense_11",
+            "name": "dense_22",
             "original": "Dense",
             "type": "Nonlinearity"
         },
@@ -135,9 +135,9 @@
             },
             "id": 3,
             "inputs": [
-                "dense_11"
+                "dense_22"
             ],
-            "name": "dense_12_dense",
+            "name": "dense_23_dense",
             "original": "Dense",
             "type": "Dense"
         },
@@ -160,9 +160,9 @@
             },
             "id": 3,
             "inputs": [
-                "dense_12_dense"
+                "dense_23_dense"
             ],
-            "name": "dense_12",
+            "name": "dense_23",
             "original": "Dense",
             "type": "Nonlinearity"
         },
@@ -188,9 +188,9 @@
             },
             "id": 4,
             "inputs": [
-                "dense_12"
+                "dense_23"
             ],
-            "name": "dense_13_dense",
+            "name": "dense_24_dense",
             "original": "Dense",
             "type": "Dense"
         },
@@ -213,9 +213,9 @@
             },
             "id": 4,
             "inputs": [
-                "dense_13_dense"
+                "dense_24_dense"
             ],
-            "name": "dense_13",
+            "name": "dense_24",
             "original": "Dense",
             "type": "Nonlinearity"
         },
@@ -241,9 +241,9 @@
             },
             "id": 6,
             "inputs": [
-                "dense_13"
+                "dense_24"
             ],
-            "name": "dense_14_dense",
+            "name": "dense_25_dense",
             "original": "Dense",
             "type": "Dense"
         },
@@ -266,9 +266,9 @@
             },
             "id": 6,
             "inputs": [
-                "dense_14_dense"
+                "dense_25_dense"
             ],
-            "name": "dense_14",
+            "name": "dense_25",
             "original": "Dense",
             "type": "Nonlinearity"
         }
@@ -282,7 +282,7 @@
     "model_type": "keras",
     "name": "mlp_predict_failure",
     "outputs": [
-        "dense_14"
+        "dense_25"
     ],
     "ram_io_size": [
         0,
@@ -296,7 +296,7 @@
         {
             "c_size": 20,
             "c_type": "float",
-            "name": "input_4"
+            "name": "input_7"
         }
     ],
     "rom_n_macc": 11568,
@@ -304,7 +304,7 @@
         {
             "c_size": 20,
             "c_type": "float",
-            "name": "dense_14"
+            "name": "dense_25"
         }
     ],
     "rom_size": 45076,
