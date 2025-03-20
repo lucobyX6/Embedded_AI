@@ -3,7 +3,7 @@
 **File :** ai4i2020.csv \
 *Weight : 501ko | Type : .csv*
 > Dataset of 10,000 machines \
-> Labels : \
+> Labels :
 >
 > *Input*
 > - UDI,Product 
