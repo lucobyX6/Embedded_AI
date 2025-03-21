@@ -4,7 +4,7 @@
 Introduction
 ----------------------
 
-**Context :**
+**Context :** **TERMINER CETTE PARTIE**
 
 **Goal :** Train a failure predictibe AI model and implement it on a STM32 Discovery Kit, to develop embedded AI for microelectronics. 
 
@@ -56,11 +56,12 @@ To correct this problem, we have use SMOTE. It creates new datas based on curren
 Our model is composed of 3 layers of 32,64 and 128 neurons. To avoid underfitting, there is no dropout on first and second layer. \
 On the last layer, neurons are trained to detect specific details of data. So to avoid overfitting on dataset, we place a huge dropout on last layer. The multi-layer-perceptron is composed of **11,269 parameters**. After training and test, the accurancy is **92%**.
 
-| Layer | Neurons | Dropout |
-| ------------- | ------------- | ------ |
-| 1 | 32 | 0.0
-| 2 | 64 | 0.0 
-| 3 | 128 | 0.5
+| Layer | Neurons | Activation Funct | Dropout |
+| ------------- | ------------- | ------------- | ------ |
+| 1 | 32 | ReLu | 0.0 |
+| 2 | 64 | ReLu | 0.0 |
+| 3 | 128 | ReLu | 0.5 |
+|4 | 5 | Softmax | 0.0 |
 
 We have exported the model to .h5 file, to implement on the board. 
 
@@ -68,6 +69,8 @@ We have exported the model to .h5 file, to implement on the board.
 
 CubeIDE is the default editor for STM32 board. In this editor, we wrote a small code to use CubeAI app. \
 CubeAI is a powerful software developped by STMicroelectronics to implement AI model on ST Board. In our case, the model is on a .h5. This file is upload in CubeAI with a balanced optimization.
+
+**TERMINER CETTE PARTIE**
 
 > Complexity: 11568 MACC
 >
