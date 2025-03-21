@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 7 resources" deleteContents="false" description="Delete 7 resources" element1="/Intro_Embedded/X-CUBE-AI/App/mnist_config.h" element2="/Intro_Embedded/X-CUBE-AI/App/mnist_data_params.c" element3="/Intro_Embedded/X-CUBE-AI/App/mnist_data_params.h" element4="/Intro_Embedded/X-CUBE-AI/App/mnist_data.c" element5="/Intro_Embedded/X-CUBE-AI/App/mnist_data.h" element6="/Intro_Embedded/X-CUBE-AI/App/mnist.c" element7="/Intro_Embedded/X-CUBE-AI/App/mnist.h" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="7" stamp="1742546163348"/>
+</session>

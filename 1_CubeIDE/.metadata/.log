@@ -487,3 +487,36 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-03-20 11:05:31.311
 !MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2025-03-21 08:42:50.500 -----------------------------------------------
+eclipse.buildId=Version 1.18.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-03-21 08:43:30.177
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-03-21 08:43:30.180
+!MESSAGE Log4j2 initialized with config file C:\1_Travail\3_ISMIN\2A_ISMIN\1_Cours\ISMIN_S8\9_GP_Analytique_Industrie_Futur\1_UP_IA_Embarquee\2_Rendu\Embedded_AI\1_CubeIDE\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-03-21 08:43:54.967
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2025-03-21 10:32:09.288 -----------------------------------------------
+eclipse.buildId=Version 1.18.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2025-03-21 10:32:21.862
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-03-21 10:32:43.493
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-03-21 10:32:43.495
+!MESSAGE Log4j2 initialized with config file C:\1_Travail\3_ISMIN\2A_ISMIN\1_Cours\ISMIN_S8\9_GP_Analytique_Industrie_Futur\1_UP_IA_Embarquee\2_Rendu\Embedded_AI\1_CubeIDE\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-03-21 10:33:39.519
+!MESSAGE Started RMI Server, listening on port 41337
