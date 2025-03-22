@@ -77,128 +77,129 @@ Thank to the previous .h5 and .npy files, we can optimize our MLP on the STM32 b
 
 ---
 <details><summary>Click on widget to open the analyze result</summary>
-   ```Analyzing model 
-   C:/Users/luc4s/STM32Cube/Repository/Packs/STMicroelectronics/X-CUBE-AI/10.0.0/Utilities/windows/stedgeai.exe analyze --target stm32l4 --name mlp_predict_failure -m C:/1_Travail/3_ISMIN/2A_ISMIN/1_Cours/ISMIN_S8/9_GP_Analytique_Industrie_Futur/1_UP_IA_Embarquee/2_Rendu/Embedded_AI/0_Data/Predict_machine.h5 --compression none --verbosity 1 --workspace C:/Users/luc4s/AppData/Local/Temp/mxAI_workspace28971001549004165106450058234944 --output C:/Users/luc4s/.stm32cubemx/mlp_predict_failure_output 
-   ST Edge AI Core v2.0.0-20049 
-   Creating c (debug) info json file C:\Users\luc4s\AppData\Local\Temp\mxAI_workspace28971001549004165106450058234944\mlp_predict_failure_c_info.json 
-     
-    Exec/report summary (analyze) 
-    ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
-    model file         :   C:\1_Travail\3_ISMIN\2A_ISMIN\1_Cours\ISMIN_S8\9_GP_Analytique_Industrie_Futur\1_UP_IA_Embarquee\2_Rendu\Embedded_AI\0_Data\Predict_machine.h5    
-    type               :   keras                                                                                                                                             
-    c_name             :   mlp_predict_failure                                                                                                                               
-    compression        :   none                                                                                                                                              
-    options            :   allocate-inputs, allocate-outputs                                                                                                                 
-    optimization       :   balanced                                                                                                                                          
-    target/series      :   stm32l4                                                                                                                                           
-    workspace dir      :   C:\Users\luc4s\AppData\Local\Temp\mxAI_workspace28971001549004165106450058234944                                                                  
-    output dir         :   C:\Users\luc4s\.stm32cubemx\mlp_predict_failure_output                                                                                            
-    model_fmt          :   float                                                                                                                                             
-    model_name         :   Predict_machine                                                                                                                                   
-    model_hash         :   0x741cba476315da776fc9d84bae9917ae                                                                                                                
-    params #           :   11,269 items (44.02 KiB)                                                                                                                          
-    ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
-    input 1/1          :   'input_7', f32(1x5), 20 Bytes, activations                                                                                                        
-    output 1/1         :   'dense_25', f32(1x5), 20 Bytes, activations                                                                                                       
-    macc               :   11,568                                                                                                                                            
-    weights (ro)       :   45,076 B (44.02 KiB) (1 segment)                                                                                                                  
-    activations (rw)   :   768 B (768 B) (1 segment) *                                                                                                                       
-    ram (total)        :   768 B (768 B) = 768 + 0 + 0                                                                                                                       
-    ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
-    (*) 'input'/'output' buffers can be used from the activations buffer 
-   Computing AI RT data/code size (target=stm32l4).. 
-    Model name - Predict_machine 
-    ------ ------------------------ ------------- -------------- ------- ---------------- 
-    m_id   layer (original)         oshape        param/size        macc     connected to 
-    ------ ------------------------ ------------- -------------- ------- ---------------- 
-    0      input_7 (InputLayer)     [b:1,c:5] 
-    ------ ------------------------ ------------- -------------- ------- ---------------- 
-    1      flatten_6 (Flatten)      [b:1,c:5]                                     input_7 
-    ------ ------------------------ ------------- -------------- ------- ---------------- 
-    2      dense_22_dense (Dense)   [b:1,c:32]    192/768            192        flatten_6 
-           dense_22 (Dense)         [b:1,c:32]                        32   dense_22_dense 
-    ------ ------------------------ ------------- -------------- ------- ---------------- 
-    3      dense_23_dense (Dense)   [b:1,c:64]    2,112/8,448      2,112         dense_22 
-           dense_23 (Dense)         [b:1,c:64]                        64   dense_23_dense 
-    ------ ------------------------ ------------- -------------- ------- ---------------- 
-    4      dense_24_dense (Dense)   [b:1,c:128]   8,320/33,280     8,320         dense_23 
-           dense_24 (Dense)         [b:1,c:128]                      128   dense_24_dense 
-    ------ ------------------------ ------------- -------------- ------- ---------------- 
-    6      dense_25_dense (Dense)   [b:1,c:5]     645/2,580          645         dense_24 
-           dense_25 (Dense)         [b:1,c:5]                         75   dense_25_dense 
-    ------ ------------------------ ------------- -------------- ------- ---------------- 
-    model: macc=11,568 weights=45,076 activations=-- io=-- 
-    Number of operations per c-layer 
-    ------- ------ ------------------------- -------- -------------- 
-    c_id    m_id   name (type)                    #op           type 
-    ------- ------ ------------------------- -------- -------------- 
-    0       2      dense_22_dense (Dense)         192   smul_f32_f32 
-    1       2      dense_22 (Nonlinearity)         32     op_f32_f32 
-    2       3      dense_23_dense (Dense)       2,112   smul_f32_f32 
-    3       3      dense_23 (Nonlinearity)         64     op_f32_f32 
-    4       4      dense_24_dense (Dense)       8,320   smul_f32_f32 
-    5       4      dense_24 (Nonlinearity)        128     op_f32_f32 
-    6       6      dense_25_dense (Dense)         645   smul_f32_f32 
-    7       6      dense_25 (Nonlinearity)         75     op_f32_f32 
-    ------- ------ ------------------------- -------- -------------- 
-    total                                      11,568 
-    Number of operation types 
-    ---------------- -------- ----------- 
-    operation type          #           % 
-    ---------------- -------- ----------- 
-    smul_f32_f32       11,269       97.4% 
-    op_f32_f32            299        2.6% 
-    Complexity report (model) 
-    ------ ---------------- ------------------------- ------------------------- -------- 
-    m_id   name             c_macc                    c_rom                     c_id 
-    ------ ---------------- ------------------------- ------------------------- -------- 
-    2      dense_22_dense   |                  1.9%   |                  1.7%   [0, 1] 
-    3      dense_23_dense   ||||              18.8%   ||||              18.7%   [2, 3] 
-    4      dense_24_dense   ||||||||||||||||  73.0%   ||||||||||||||||  73.8%   [4, 5] 
-    6      dense_25_dense   ||                 6.2%   ||                 5.7%   [6, 7] 
-    ------ ---------------- ------------------------- ------------------------- -------- 
-    macc=11,568 weights=45,076 act=768 ram_io=0 
-    Requested memory size by section - "stm32l4" target 
-    ------------------------------ ------- -------- ------- ----- 
-    module                            text   rodata    data   bss 
-    ------------------------------ ------- -------- ------- ----- 
-    NetworkRuntime1000_CM4_GCC.a     7,012        0       0     0 
-    mlp_predict_failure.o              608       64   2,236   160 
-    mlp_predict_failure_data.o          48       16      88     0 
-    lib (toolchain)*                   614       24       0     0 
-    ------------------------------ ------- -------- ------- ----- 
-    RT total**                       8,282      104   2,324   160 
-    ------------------------------ ------- -------- ------- ----- 
-    weights                              0   45,080       0     0 
-    activations                          0        0       0   768 
-    io                                   0        0       0     0 
-    ------------------------------ ------- -------- ------- ----- 
-    TOTAL                            8,282   45,184   2,324   928 
-    ------------------------------ ------- -------- ------- ----- 
-    *  toolchain objects (libm/libgcc*) 
-    ** RT AI runtime objects (kernels+infrastructure) 
-     Summary - "stm32l4" target 
-     --------------------------------------------------- 
-                  FLASH (ro)      %*   RAM (rw)       % 
-     --------------------------------------------------- 
-     RT total         10,710   19.2%      2,484   76.4% 
-     --------------------------------------------------- 
-     TOTAL            55,790              3,252 
-     --------------------------------------------------- 
-     *  rt/total 
-   Creating txt report file C:\Users\luc4s\.stm32cubemx\mlp_predict_failure_output\mlp_predict_failure_analyze_report.txt 
-   elapsed time (analyze): 85.680s 
-   Model file:      Predict_machine.h5 
-   Total Flash:     55786 B (54.48 KiB) 
-       Weights:     45076 B (44.02 KiB) 
-       Library:     10710 B (10.46 KiB) 
-   Total Ram:       3252 B (3.18 KiB) 
-       Activations: 768 B 
-       Library:     2484 B (2.43 KiB) 
-       Input:       20 B (included in Activations) 
-       Output:      20 B (included in Activations) 
-   Done 
-   Analyze complete on AI model```
+
+      ```Analyzing model 
+      C:/Users/luc4s/STM32Cube/Repository/Packs/STMicroelectronics/X-CUBE-AI/10.0.0/Utilities/windows/stedgeai.exe analyze --target stm32l4 --name mlp_predict_failure -m C:/1_Travail/3_ISMIN/2A_ISMIN/1_Cours/ISMIN_S8/9_GP_Analytique_Industrie_Futur/1_UP_IA_Embarquee/2_Rendu/Embedded_AI/0_Data/Predict_machine.h5 --compression none --verbosity 1 --workspace C:/Users/luc4s/AppData/Local/Temp/mxAI_workspace28971001549004165106450058234944 --output C:/Users/luc4s/.stm32cubemx/mlp_predict_failure_output 
+      ST Edge AI Core v2.0.0-20049 
+      Creating c (debug) info json file C:\Users\luc4s\AppData\Local\Temp\mxAI_workspace28971001549004165106450058234944\mlp_predict_failure_c_info.json 
+        
+       Exec/report summary (analyze) 
+       ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
+       model file         :   C:\1_Travail\3_ISMIN\2A_ISMIN\1_Cours\ISMIN_S8\9_GP_Analytique_Industrie_Futur\1_UP_IA_Embarquee\2_Rendu\Embedded_AI\0_Data\Predict_machine.h5    
+       type               :   keras                                                                                                                                             
+       c_name             :   mlp_predict_failure                                                                                                                               
+       compression        :   none                                                                                                                                              
+       options            :   allocate-inputs, allocate-outputs                                                                                                                 
+       optimization       :   balanced                                                                                                                                          
+       target/series      :   stm32l4                                                                                                                                           
+       workspace dir      :   C:\Users\luc4s\AppData\Local\Temp\mxAI_workspace28971001549004165106450058234944                                                                  
+       output dir         :   C:\Users\luc4s\.stm32cubemx\mlp_predict_failure_output                                                                                            
+       model_fmt          :   float                                                                                                                                             
+       model_name         :   Predict_machine                                                                                                                                   
+       model_hash         :   0x741cba476315da776fc9d84bae9917ae                                                                                                                
+       params #           :   11,269 items (44.02 KiB)                                                                                                                          
+       ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
+       input 1/1          :   'input_7', f32(1x5), 20 Bytes, activations                                                                                                        
+       output 1/1         :   'dense_25', f32(1x5), 20 Bytes, activations                                                                                                       
+       macc               :   11,568                                                                                                                                            
+       weights (ro)       :   45,076 B (44.02 KiB) (1 segment)                                                                                                                  
+       activations (rw)   :   768 B (768 B) (1 segment) *                                                                                                                       
+       ram (total)        :   768 B (768 B) = 768 + 0 + 0                                                                                                                       
+       ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
+       (*) 'input'/'output' buffers can be used from the activations buffer 
+      Computing AI RT data/code size (target=stm32l4).. 
+       Model name - Predict_machine 
+       ------ ------------------------ ------------- -------------- ------- ---------------- 
+       m_id   layer (original)         oshape        param/size        macc     connected to 
+       ------ ------------------------ ------------- -------------- ------- ---------------- 
+       0      input_7 (InputLayer)     [b:1,c:5] 
+       ------ ------------------------ ------------- -------------- ------- ---------------- 
+       1      flatten_6 (Flatten)      [b:1,c:5]                                     input_7 
+       ------ ------------------------ ------------- -------------- ------- ---------------- 
+       2      dense_22_dense (Dense)   [b:1,c:32]    192/768            192        flatten_6 
+              dense_22 (Dense)         [b:1,c:32]                        32   dense_22_dense 
+       ------ ------------------------ ------------- -------------- ------- ---------------- 
+       3      dense_23_dense (Dense)   [b:1,c:64]    2,112/8,448      2,112         dense_22 
+              dense_23 (Dense)         [b:1,c:64]                        64   dense_23_dense 
+       ------ ------------------------ ------------- -------------- ------- ---------------- 
+       4      dense_24_dense (Dense)   [b:1,c:128]   8,320/33,280     8,320         dense_23 
+              dense_24 (Dense)         [b:1,c:128]                      128   dense_24_dense 
+       ------ ------------------------ ------------- -------------- ------- ---------------- 
+       6      dense_25_dense (Dense)   [b:1,c:5]     645/2,580          645         dense_24 
+              dense_25 (Dense)         [b:1,c:5]                         75   dense_25_dense 
+       ------ ------------------------ ------------- -------------- ------- ---------------- 
+       model: macc=11,568 weights=45,076 activations=-- io=-- 
+       Number of operations per c-layer 
+       ------- ------ ------------------------- -------- -------------- 
+       c_id    m_id   name (type)                    #op           type 
+       ------- ------ ------------------------- -------- -------------- 
+       0       2      dense_22_dense (Dense)         192   smul_f32_f32 
+       1       2      dense_22 (Nonlinearity)         32     op_f32_f32 
+       2       3      dense_23_dense (Dense)       2,112   smul_f32_f32 
+       3       3      dense_23 (Nonlinearity)         64     op_f32_f32 
+       4       4      dense_24_dense (Dense)       8,320   smul_f32_f32 
+       5       4      dense_24 (Nonlinearity)        128     op_f32_f32 
+       6       6      dense_25_dense (Dense)         645   smul_f32_f32 
+       7       6      dense_25 (Nonlinearity)         75     op_f32_f32 
+       ------- ------ ------------------------- -------- -------------- 
+       total                                      11,568 
+       Number of operation types 
+       ---------------- -------- ----------- 
+       operation type          #           % 
+       ---------------- -------- ----------- 
+       smul_f32_f32       11,269       97.4% 
+       op_f32_f32            299        2.6% 
+       Complexity report (model) 
+       ------ ---------------- ------------------------- ------------------------- -------- 
+       m_id   name             c_macc                    c_rom                     c_id 
+       ------ ---------------- ------------------------- ------------------------- -------- 
+       2      dense_22_dense   |                  1.9%   |                  1.7%   [0, 1] 
+       3      dense_23_dense   ||||              18.8%   ||||              18.7%   [2, 3] 
+       4      dense_24_dense   ||||||||||||||||  73.0%   ||||||||||||||||  73.8%   [4, 5] 
+       6      dense_25_dense   ||                 6.2%   ||                 5.7%   [6, 7] 
+       ------ ---------------- ------------------------- ------------------------- -------- 
+       macc=11,568 weights=45,076 act=768 ram_io=0 
+       Requested memory size by section - "stm32l4" target 
+       ------------------------------ ------- -------- ------- ----- 
+       module                            text   rodata    data   bss 
+       ------------------------------ ------- -------- ------- ----- 
+       NetworkRuntime1000_CM4_GCC.a     7,012        0       0     0 
+       mlp_predict_failure.o              608       64   2,236   160 
+       mlp_predict_failure_data.o          48       16      88     0 
+       lib (toolchain)*                   614       24       0     0 
+       ------------------------------ ------- -------- ------- ----- 
+       RT total**                       8,282      104   2,324   160 
+       ------------------------------ ------- -------- ------- ----- 
+       weights                              0   45,080       0     0 
+       activations                          0        0       0   768 
+       io                                   0        0       0     0 
+       ------------------------------ ------- -------- ------- ----- 
+       TOTAL                            8,282   45,184   2,324   928 
+       ------------------------------ ------- -------- ------- ----- 
+       *  toolchain objects (libm/libgcc*) 
+       ** RT AI runtime objects (kernels+infrastructure) 
+        Summary - "stm32l4" target 
+        --------------------------------------------------- 
+                     FLASH (ro)      %*   RAM (rw)       % 
+        --------------------------------------------------- 
+        RT total         10,710   19.2%      2,484   76.4% 
+        --------------------------------------------------- 
+        TOTAL            55,790              3,252 
+        --------------------------------------------------- 
+        *  rt/total 
+      Creating txt report file C:\Users\luc4s\.stm32cubemx\mlp_predict_failure_output\mlp_predict_failure_analyze_report.txt 
+      elapsed time (analyze): 85.680s 
+      Model file:      Predict_machine.h5 
+      Total Flash:     55786 B (54.48 KiB) 
+          Weights:     45076 B (44.02 KiB) 
+          Library:     10710 B (10.46 KiB) 
+      Total Ram:       3252 B (3.18 KiB) 
+          Activations: 768 B 
+          Library:     2484 B (2.43 KiB) 
+          Input:       20 B (included in Activations) 
+          Output:      20 B (included in Activations) 
+      Done 
+      Analyze complete on AI model```
 </details>
 
 - - - 
