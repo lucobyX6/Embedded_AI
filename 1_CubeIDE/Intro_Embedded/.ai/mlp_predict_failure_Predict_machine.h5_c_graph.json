@@ -57,7 +57,7 @@
         }
     },
     "activations_alignment": 4,
-    "arguments": "analyze --target stm32l4 --name mlp_predict_failure -m C:/1_Travail/3_ISMIN/2A_ISMIN/1_Cours/ISMIN_S8/9_GP_Analytique_Industrie_Futur/1_UP_IA_Embarquee/2_Rendu/Embedded_AI/0_Data/Predict_machine.h5 --compression none --verbosity 1 --workspace C:/Users/luc4s/AppData/Local/Temp/mxAI_workspace368929635760011445523244058821131 --output C:/Users/luc4s/.stm32cubemx/mlp_predict_failure_output",
+    "arguments": "analyze --target stm32l4 --name mlp_predict_failure -m C:/1_Travail/3_ISMIN/2A_ISMIN/1_Cours/ISMIN_S8/9_GP_Analytique_Industrie_Futur/1_UP_IA_Embarquee/2_Rendu/Embedded_AI/0_Data/Predict_machine.h5 --compression none --verbosity 1 --workspace C:/Users/luc4s/AppData/Local/Temp/mxAI_workspace28971001549004165106450058234944 --output C:/Users/luc4s/.stm32cubemx/mlp_predict_failure_output",
     "c_activations_count": 1,
     "c_arrays": [
         {
@@ -751,7 +751,7 @@
         ]
     },
     "data_alignment": 4,
-    "date_time": "2025-03-21T09:35:22+0100",
+    "date_time": "2025-03-22T11:34:39+0100",
     "inputs": [
         "input_7_output"
     ],
