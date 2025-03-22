@@ -77,8 +77,7 @@ Thank to the previous .h5 and .npy files, we can optimize our MLP on the STM32 b
 
 ---
 <details><summary>Click on widget to open the analyze result</summary>
-   ```
-   Analyzing model 
+   ```Analyzing model 
    C:/Users/luc4s/STM32Cube/Repository/Packs/STMicroelectronics/X-CUBE-AI/10.0.0/Utilities/windows/stedgeai.exe analyze --target stm32l4 --name mlp_predict_failure -m C:/1_Travail/3_ISMIN/2A_ISMIN/1_Cours/ISMIN_S8/9_GP_Analytique_Industrie_Futur/1_UP_IA_Embarquee/2_Rendu/Embedded_AI/0_Data/Predict_machine.h5 --compression none --verbosity 1 --workspace C:/Users/luc4s/AppData/Local/Temp/mxAI_workspace28971001549004165106450058234944 --output C:/Users/luc4s/.stm32cubemx/mlp_predict_failure_output 
    ST Edge AI Core v2.0.0-20049 
    Creating c (debug) info json file C:\Users\luc4s\AppData\Local\Temp\mxAI_workspace28971001549004165106450058234944\mlp_predict_failure_c_info.json 
@@ -199,8 +198,7 @@ Thank to the previous .h5 and .npy files, we can optimize our MLP on the STM32 b
        Input:       20 B (included in Activations) 
        Output:      20 B (included in Activations) 
    Done 
-   Analyze complete on AI model 
-   ```
+   Analyze complete on AI model```
 </details>
 
 - - - 
