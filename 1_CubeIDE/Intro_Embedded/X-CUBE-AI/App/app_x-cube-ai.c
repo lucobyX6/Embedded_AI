@@ -60,7 +60,7 @@
 /* USER CODE BEGIN includes */
  extern UART_HandleTypeDef huart2;
 
- #define BYTES_IN_FLOATS 28*28*4
+ #define BYTES_IN_FLOATS 5*4
 
  #define TIMEOUT 1000
 
@@ -68,7 +68,7 @@
 
  #define ACKNOWLEDGE 0xCD
 
- #define CLASS_NUMBER 10
+ #define CLASS_NUMBER 5
 
   void synchronize_UART(void);
 /* USER CODE END includes */

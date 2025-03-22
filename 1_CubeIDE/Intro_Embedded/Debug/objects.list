@@ -41,6 +41,3 @@
 "./X-CUBE-AI/App/mlp_predict_failure.o"
 "./X-CUBE-AI/App/mlp_predict_failure_data.o"
 "./X-CUBE-AI/App/mlp_predict_failure_data_params.o"
-"./X-CUBE-AI/App/mnist.o"
-"./X-CUBE-AI/App/mnist_data.o"
-"./X-CUBE-AI/App/mnist_data_params.o"

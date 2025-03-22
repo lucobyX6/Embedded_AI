@@ -470,44 +470,44 @@
   ],
   "environment": {
     "generated_model": {
-      "generated_time": "2025-03-20T10:20:31+0100",
+      "generated_time": "2025-03-22T11:34:39+0100",
       "model_files": [
         {
           "name": "mlp_predict_failure_data_params.h",
-          "signature": "0xb7c70783005ae2cd1da07d8074846165"
+          "signature": "0xbf3c97c73a4e2140de7aeb4629083e38"
         },
         {
           "name": "mlp_predict_failure_data_params.c",
-          "signature": "0x0469ee83d513bef54018299943598cda"
+          "signature": "0x973c013ce92943852eb882061015c24e"
         },
         {
           "name": "mlp_predict_failure_data.h",
-          "signature": "0x38b0ebe463112cb7b2c8615c6cfe4574"
+          "signature": "0x978692efb21a3dce60a040a8bde2eb20"
         },
         {
           "name": "mlp_predict_failure_data.c",
-          "signature": "0xb9be0a0ac7ec397a19d65408dc5591a6"
+          "signature": "0x1b8ba145d08a66696d53725c2e6182db"
         },
         {
           "name": "mlp_predict_failure_config.h",
-          "signature": "0x14e770a0e30d8a0200df220f7ce5fa17"
+          "signature": "0x46f271ee2fb6a637cd29c56a213c66d4"
         },
         {
           "name": "mlp_predict_failure.h",
-          "signature": "0xa7f7cc48cde6817512db4b98200c44a2"
+          "signature": "0xc75ed919ce4dc01fc71ad31e1abcebb7"
         },
         {
           "name": "mlp_predict_failure.c",
-          "signature": "0xbb8838a4ac2a1788f4620a9528812564"
+          "signature": "0x20913e29bf40f1ff81c3b88948b34384"
         }
       ],
       "name": "mlp_predict_failure"
     },
-    "network_signature": "0xeb85473beb12f6eb",
+    "network_signature": "0x27416e7b7ba8af8d",
     "test_name": "",
     "tools": [
       {
-        "arguments": "analyze --target stm32l4 --name mlp_predict_failure -m C:/1_Travail/3_ISMIN/2A_ISMIN/1_Cours/ISMIN_S8/9_GP_Analytique_Industrie_Futur/1_UP_IA_Embarquee/2_Rendu/Embedded_AI/0_Data/Predict_machine.h5 --compression none --verbosity 1 --workspace C:/Users/luc4s/AppData/Local/Temp/mxAI_workspace51075762874003645816799743849632 --output C:/Users/luc4s/.stm32cubemx/mlp_predict_failure_output",
+        "arguments": "analyze --target stm32l4 --name mlp_predict_failure -m C:/1_Travail/3_ISMIN/2A_ISMIN/1_Cours/ISMIN_S8/9_GP_Analytique_Industrie_Futur/1_UP_IA_Embarquee/2_Rendu/Embedded_AI/0_Data/Predict_machine.h5 --compression none --verbosity 1 --workspace C:/Users/luc4s/AppData/Local/Temp/mxAI_workspace28971001549004165106450058234944 --output C:/Users/luc4s/.stm32cubemx/mlp_predict_failure_output",
         "environment": [
           "STATS_TYPE=X-CUBE-AI"
         ],
